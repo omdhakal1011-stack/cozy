@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Cozy Gaming Community</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="blog-body">
+    <nav class="gaming-nav">
+        <div class="nav-container">
+            <h1>🎮 Cozy Gaming</h1>
+            <div class="nav-links">
+                <a href="home.html">Home</a>
+                <a href="blog.html" class="active">Blog</a>
+                <a href="profile.html">Profile</a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="blog-section">
+            <h2>📝 Create New Post</h2>
+            <div class="post-form">
+                <input type="text" id="postTitle" placeholder="Post Title" required>
+                <textarea id="postContent" placeholder="What's on your mind?" required></textarea>
+                <input type="file" id="postImage" accept="image/*">
+                <button onclick="createPost()" class="gaming-btn">Post</button>
+            </div>
+
+            <h2>📰 Recent Posts</h2>
+            <div id="postsContainer" class="posts-container"></div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-storage-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/blog.js"></script>
+</body>
+</html>

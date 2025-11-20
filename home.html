@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cozy Gaming Community - Home</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="home-body">
+    <nav class="gaming-nav">
+        <div class="nav-container">
+            <h1>🎮 Cozy Gaming</h1>
+            <div class="nav-links">
+                <a href="home.html" class="active">Home</a>
+                <a href="blog.html">Blog</a>
+                <a href="profile.html">Profile</a>
+                <button onclick="logout()" class="logout-btn">Logout</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="community-section">
+            <h2>🏠 Community Chat</h2>
+            <div class="chat-container">
+                <div id="chatMessages" class="chat-messages"></div>
+                <div class="chat-input">
+                    <input type="text" id="messageInput" placeholder="Type your message...">
+                    <button onclick="sendMessage()" class="gaming-btn">Send</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="online-users">
+            <h3>🟢 Online Friends</h3>
+            <div id="onlineList" class="online-list"></div>
+        </div>
+    </div>
+
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-auth-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.0/firebase-database-compat.js"></script>
+    <script src="js/firebase-config.js"></script>
+    <script src="js/chat.js"></script>
+</body>
+</html>
