@@ -1,4 +1,3 @@
-// js/firebase-config.js
 const firebaseConfig = {
   apiKey: "AIzaSyDWboy0BRSAYU7nNXUQY3OeWh8kWDpFtfQ",
   authDomain: "cozy-gaming-community.firebaseapp.com",
@@ -9,5 +8,4 @@ const firebaseConfig = {
   appId: "1:340605252846:web:2d2cc847b09dda9d62afff",
   measurementId: "G-4YGM5NCYMN"
 };
-
 firebase.initializeApp(firebaseConfig);
